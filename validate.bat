@@ -1,0 +1,1 @@
+D:\steamcmd\steamcmd.exe +login anonymous +app_update 258550 validate +exit
