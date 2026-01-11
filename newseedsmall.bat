@@ -4,6 +4,7 @@ del sizesmall.txt
 cd server
 del /s /q *
 set /a SEED=%random% * 32768 + %random%
+cd ..
 echo %SEED% > seedsmall.txt
 
 REM Define range
@@ -18,3 +19,4 @@ set /a NUMBER=(%RANDOM% %% %RANGE%) + %MIN%
 
 REM Write number to file
 echo %NUMBER% > sizesmall.txt
+
