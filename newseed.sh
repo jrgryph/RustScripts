@@ -2,6 +2,7 @@
 
 # Remove existing seed file if it exists
 rm -f seed.txt
+rm -r size.txt
 
 # Generate a random seed similar in spirit to the Windows %RANDOM% logic
 # $RANDOM returns 0–32767, so combining two calls mimics higher entropy
@@ -20,3 +21,4 @@ NUMBER=$(( RANDOM % RANGE + MIN ))
 
 # Write number to file
 echo "$NUMBER" > size.txt
+
